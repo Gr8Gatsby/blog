@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Kevin Hill's blog",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gr8gatsby/blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Kevin Hill",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/gr8gatsby/blog/issues"
+  },
+  "homepage": "https://github.com/gr8gatsby/blog#readme"
+}
