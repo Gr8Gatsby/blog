@@ -1,5 +1,5 @@
 ---
-title: "Welcome to My Blog"
+title: "Simply human"
 layout: "default" # Optional if you have layouts
 ---
 

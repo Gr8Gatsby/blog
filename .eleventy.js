@@ -4,5 +4,8 @@ module.exports = {
     output: "docs", // GitHub Pages will use this folder for serving
     includes: "_includes", // Optional: for layouts, partials, etc.
     layouts: "_layouts" // Optional: for reusable layouts
+  },
+  eleventyComputed: {
+    year: () => new Date().getFullYear() // Dynamically compute the current year
   }
 };
