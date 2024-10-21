@@ -5,6 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
+    "build:prod":"ELEVENTY_ENV=production npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve"
   },
   "repository": {

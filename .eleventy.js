@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const isProduction = process.env.ELEVENTY_ENV === "production";
 
 module.exports = function(eleventyConfig) {
   // Image optimization filter
@@ -37,6 +38,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
 
   return {
+    pathPrefix: isProduction ? "/blog/" : "/",
     dir: {
       input: "src", // Folder where your content lives
       output: "docs", // GitHub Pages will use this folder for serving
