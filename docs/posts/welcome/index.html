@@ -1,2 +1,87 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Post</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="hero">
+  <div class="hero-content">
+    <h1>My First Post</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/pages/about/">About</a>
+      <a href="/posts/">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Add this CSS to your stylesheet (e.g., styles.css) -->
+<style>
+  .hero {
+    position: relative;
+    background-image: url("/images/1920_1080.jpg"); /* Set the background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust height for desktop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  /* Responsive background image size */
+  @media (max-width: 768px) {
+    .hero {
+      background-image: url("/images/600_1080.jpg"); /* Smaller image for mobile */
+      height: 300px; /* Adjust height for mobile */
+    }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+    <main>
+        <article>
+            <h1>My First Post</h1>
+            <time datetime="2024-10-20">2024-10-20</time>
+            <div>
+                <h1>Hello World</h1>
 <p>This is my first blog post on 11ty!</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+    Simply Human, no rights reserved.
+</footer>
+</body>
+</html>

@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/gr8gatsby/blog/issues"
   },
-  "homepage": "https://github.com/gr8gatsby/blog#readme"
+  "homepage": "https://github.com/gr8gatsby/blog#readme",
+  "dependencies": {
+    "@11ty/eleventy-img": "^5.0.0"
+  }
 }

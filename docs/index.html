@@ -8,115 +8,66 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Basic CSS Styling -->
-    <style>
-        :root {
-            --primary-color: #007acc;
-            --text-color: #333;
-            --background-color: #f5f5f5;
-            --header-height: 60px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            height: var(--header-height);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            gap: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: var(--primary-color);
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        h2 {
-            margin-bottom: 1rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        a {
-            color: var(--primary-color);
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.2rem;
-            }
-
-            main {
-                padding: 15px;
-            }
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Simply human</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about/">About</a>
-            <a href="/contact/">Contact</a>
-        </nav>
-    </header>
+    <header class="hero">
+  <div class="hero-content">
+    <h1>Simply human</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/pages/about/">About</a>
+      <a href="/posts/">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Add this CSS to your stylesheet (e.g., styles.css) -->
+<style>
+  .hero {
+    position: relative;
+    background-image: url("/images/1920_1080.jpg"); /* Set the background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust height for desktop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  /* Responsive background image size */
+  @media (max-width: 768px) {
+    .hero {
+      background-image: url("/images/600_1080.jpg"); /* Smaller image for mobile */
+      height: 300px; /* Adjust height for mobile */
+    }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+</style>
 
     <main>
         <h1>Hello World</h1>
@@ -125,8 +76,8 @@
     </main>
 
     <footer>
-        &copy;  - My Modern Blog. All rights reserved.
-    </footer>
+    Simply Human, no rights reserved.
+</footer>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 ---
 title: "My First Post"
 date: "2024-10-20"
+layout: "post"
 ---
 
 # Hello World
