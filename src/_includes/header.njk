@@ -2,9 +2,9 @@
   <div class="hero-content">
     <h1>{{ title }}</h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/pages/about/">About</a>
-      <a href="/posts/">Blog</a>
+      <a href="{{ pathPrefix }}/">Home</a>
+      <a href="{{ pathPrefix }}/pages/about/">About</a>
+      <a href="{{ pathPrefix }}/posts/">Blog</a>
     </nav>
   </div>
 </header>
@@ -13,7 +13,7 @@
 <style>
   .hero {
     position: relative;
-    background-image: url("{{ pathPrefix }}images/1920_1080.jpg"); /* Set the background image path */
+    background-image: url("{{ pathPrefix }}/images/1920_1080.jpg"); /* Set the background image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
   /* Responsive background image size */
   @media (max-width: 768px) {
     .hero {
-      background-image: url("{{ pathPrefix }}images/600_1080.jpg"); /* Smaller image for mobile */
+      background-image: url("{{ pathPrefix }}/images/600_1080.jpg"); /* Smaller image for mobile */
       height: 300px; /* Adjust height for mobile */
     }
   }

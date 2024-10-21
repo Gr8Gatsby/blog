@@ -38,7 +38,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
 
   return {
-    pathPrefix: isProduction ? "/blog/" : "/",
+    pathPrefix: isProduction ? "/blog" : "",
     dir: {
       input: "src", // Folder where your content lives
       output: "docs", // GitHub Pages will use this folder for serving
